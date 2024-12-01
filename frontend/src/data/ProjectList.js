@@ -1,27 +1,3 @@
-// const projectList = [
-//     {
-//       name: 'Student Management System',
-//       description: 'A full-stack application for managing student records with CRUD functionality.',
-//       technologies: 'React, Spring Boot, MySQL, Docker',
-//       github: 'https://github.com/your-repo',
-//       liveDemo: 'https://your-live-demo-link.com',
-//     },
-//     {
-//       name: 'Shop Management System',
-//       description: 'A simple shop management tool using JavaFX for UI and Java for backend logic.',
-//       technologies: 'Java, JavaFX',
-//       github: 'https://github.com/your-repo',
-//     },
-//     {
-//       name: 'Zoiggi',
-//       description: 'A dynamic e-commerce platform designed to enhance user experience with personalized recommendations and robust inventory management.',
-//       technologies: 'React, Node.js, MongoDB, Docker, Kubernetes',
-//       github: 'https://github.com/your-zoiggi-repo',
-//       liveDemo: 'https://zoiggi-live-demo-link.com',
-//     },
-//   ];
-
-// export default projectList
 const projectList = [
   {
     name: 'Student Management System',
