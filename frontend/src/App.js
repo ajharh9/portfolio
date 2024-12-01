@@ -1,21 +1,28 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route,useRoutes} from 'react-router-dom'
 import Navbar from './components/Navabr';
-import routes from './routes'
+import routes from './routes';
 
-function App() {
+const AppRoutes = () => {
+  return useRoutes(routes);
+};
+
+const App = () => {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        {routes.map(
-          (route,index)=>(
-              <Route key={index} path={route.path} element={<route.component/>}/>
-            )
-          )
-        }
-      </Routes>
+      <AppRoutes />
     </Router>
+    // <Router>
+    //   <Navbar />
+    //   <Routes>
+    //     {routes.map(
+    //       (route,index)=>(
+    //           <Route key={index} path={route.path} element={<route.component/>}/>
+    //         )
+    //       )
+    //     }
+    //   </Routes>
+    // </Router>
   );
 }
 

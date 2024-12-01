@@ -1,5 +1,10 @@
 const ContactPage = () => {
-    return <h1>Contact Us</h1>;
+    return (
+      <div>
+        <img src='images/temp.png' alt="img1" />
+
+      </div>
+    )
   };
   
   export default ContactPage;
