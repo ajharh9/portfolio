@@ -1,64 +1,91 @@
 import React from 'react';
 import projectList from '../data/ProjectList';
 
-
 const ProjectPage = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold mb-6">My Projects</h1>
-      <p className="text-lg mb-6">
-        Here are some of the projects I’ve worked on, showcasing my expertise in frontend, backend, and DevOps technologies.
-      </p>
+    <div className="pt-4 pb-20 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen px-4 md:px-8">
+      {/* Page Title */}
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-extrabold text-gray-800 mb-4 animate-fade-in-down">
+          My Projects
+        </h1>
+        <p className="text-lg text-gray-600 animate-fade-in-up">
+          Explore some of the exciting projects I’ve worked on, showcasing expertise in frontend, backend, and DevOps technologies.
+        </p>
+      </div>
 
-      {projectList.map((project, index) => (
-        <div key={index} className="border p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-semibold mb-2">{project.name}</h2>
-          <p className="text-gray-700 mb-4">{project.description}</p>
+      {/* Project Cards */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projectList.map((project, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex flex-col"
+            style={{ height: '500px' }}
+          >
+            {/* Content Wrapper */}
+            <div className="p-6 overflow-y-auto flex-grow custom-scrollbar">
+              {/* Project Title */}
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                {project.name}
+              </h2>
 
-          <h3 className="text-lg font-semibold">Technologies Used:</h3>
-          <ul className="list-disc ml-6 mb-4">
-            {project.technologies.map((tech, idx) => (
-              <li key={idx}>{tech}</li>
-            ))}
-          </ul>
+              {/* Project Description */}
+              <p className="text-gray-600 mb-4">{project.description}</p>
 
-          <h3 className="text-lg font-semibold">Key Features:</h3>
-          <ul className="list-disc ml-6 mb-4">
-            {project.features.map((feature, idx) => (
-              <li key={idx}>{feature}</li>
-            ))}
-          </ul>
+              {/* Technologies Used */}
+              <h3 className="text-lg font-semibold text-gray-800">Technologies:</h3>
+              <ul className="list-disc ml-6 text-gray-600 mb-4 space-y-1">
+                {project.technologies.map((tech, idx) => (
+                  <li key={idx}>{tech}</li>
+                ))}
+              </ul>
 
-          <div className="mt-4">
-            {project.github && (
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline mr-4"
-              >
-                GitHub Repository
-              </a>
-            )}
-            {project.liveDemo && (
-              <a
-                href={project.liveDemo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                Live Demo
-              </a>
-            )}
+              {/* Key Features */}
+              <h3 className="text-lg font-semibold text-gray-800">Key Features:</h3>
+              <ul className="list-disc ml-6 text-gray-600 space-y-1">
+                {project.features.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Project Links */}
+            <div className="p-6">
+              <div className="flex items-center justify-center space-x-4">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-all"
+                  >
+                    GitHub
+                  </a>
+                )}
+                {project.liveDemo && (
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all"
+                  >
+                    Live Demo
+                  </a>
+                )}
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
-      <div className="text-center mt-8">
-        <p className="text-gray-600">Want to know more? Feel free to reach out!</p>
+      {/* Call-to-Action Section */}
+      <div className="text-center mt-16">
+        <p className="text-gray-600 text-lg mb-4">
+          Want to know more? Feel free to reach out!
+        </p>
         <button
-          className="bg-blue-500 text-white px-6 py-2 rounded mt-4 hover:bg-blue-600"
-          onClick={() => window.location.href = '/contact'}
+          className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full hover:scale-105 hover:shadow-lg transition-all"
+          onClick={() => (window.location.href = '/contact')}
         >
           Contact Me
         </button>
