@@ -55,7 +55,7 @@ const ContactPage = () => {
             value={ContactData.name}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none"
-            placeholder="John Doe"
+            placeholder="Soaib Akhtar"
           />
         </div>
 
@@ -74,7 +74,7 @@ const ContactPage = () => {
             value={ContactData.email}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none"
-            placeholder="example@example.com"
+            placeholder="soaib@example.com"
           />
         </div>
 
