@@ -1,4 +1,4 @@
-# 🌟 Portfolio: Ajhar Hussain
+# 🌟 Portfolio: Azhar Hussain
 
 Welcome to my portfolio repository! This project is a showcase of my skills, projects, and achievements in software development, with a focus on **full-stack development**, **backend systems**, and **DevOps practices**.
 
