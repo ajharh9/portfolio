@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed z-50 w-full bg-gradient-to-r from-customGray via-gray-200 to-gray-400 text-customText shadow-lg">
+    <nav className="fixed top-0 z-50 w-full bg-gradient-to-r from-customGray via-gray-200 to-gray-400 text-customText shadow-lg">
       <div className="flex items-center justify-between px-8 py-4">
         {/* Logo */}
         <div className="text-xl font-bold">
@@ -45,7 +45,10 @@ const Navbar = () => {
         </ul>
 
         {/* Toggle Button */}
-        <button className="hidden md:flex items-center gap-2 px-4 py-2 text-sm font-medium bg-blue-500 hover:bg-blue-600 text-white rounded-xl shadow-md transition-all">
+        <button 
+          className="hidden md:flex items-center gap-2 px-4 py-2 text-sm font-medium bg-blue-500 hover:bg-blue-600 text-white rounded-xl shadow-md transition-all"
+          onClick={()=>alert("Will be implemented soon!")}  
+        >
           ⚫⚪ Toggle
         </button>
       </div>

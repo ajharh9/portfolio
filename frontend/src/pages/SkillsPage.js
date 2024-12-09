@@ -4,7 +4,7 @@ import { FaCode, FaServer, FaTools, FaDatabase } from 'react-icons/fa'; // Icons
 
 const SkillsPage = () => {
   return (
-    <div className="py-20 bg-gradient-to-b from-gray-100 to-gray-300 min-h-screen px-4 md:px-8">
+    <div className="pt-4 pb-20 bg-gradient-to-b from-gray-100 to-gray-300 min-h-screen px-4 md:px-8">
       {/* Page Header */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-extrabold text-gray-800 mb-4 animate-fade-in-down">

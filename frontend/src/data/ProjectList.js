@@ -21,7 +21,7 @@ const projectList = [
       'Robust backend logic using Java.',
       'Lightweight and efficient desktop application.',
     ],
-    github: 'https://github.com/your-repo',
+    github: 'https://github.com/ajharh9/Shop-Java-Problem-Statement',
   },
   {
     name: 'Zoiggi',
@@ -36,7 +36,7 @@ const projectList = [
       'Orchestrated and scalable deployment with Kubernetes.',
       'RESTful APIs for seamless communication between frontend and backend.',
     ],
-    github: 'https://github.com/your-zoiggi-repo',
+    github: 'https://github.com/ajharh9/Zoiggi',
     liveDemo: 'https://zoiggi-live-demo-link.com',
   },
 ];

@@ -3,7 +3,7 @@ import projectList from '../data/ProjectList';
 
 const ProjectPage = () => {
   return (
-    <div className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen px-4 md:px-8">
+    <div className="pt-4 pb-20 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen px-4 md:px-8">
       {/* Page Title */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-extrabold text-gray-800 mb-4 animate-fade-in-down">

@@ -24,9 +24,24 @@ const routes = [
                 { path: 'about-me', element: <AboutPage/> },
                 { path: 'skills', element: <SkillsPage/> },
                 { path: 'projects', element: <ProjectPage/> },
-            ],
-        },
-        { path: '/contact', element: <ContactPage /> }
+            ]
+        }
+      ],
+    },
+    {
+      path: 'contact',
+      element: <Layout />,
+      children: [ 
+        { 
+            path: '/contact', 
+            element: <ContactPage />, 
+            children: [
+                { index: true, element: <AboutPage /> }, 
+                { path: 'about-me', element: <AboutPage/> },
+                { path: 'skills', element: <SkillsPage/> },
+                { path: 'projects', element: <ProjectPage/> },
+            ]
+        }
       ],
     }
   ];

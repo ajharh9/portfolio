@@ -1,13 +1,13 @@
-import { useState } from "react";
 import { Outlet,Link,NavLink, useLocation } from "react-router-dom";
-
-
 
 const HomePage = () => {
     const location = useLocation();
     const getButtonStyle = (path) => {
-        console.log(location)
-        console.log(path)
+        // console.log(location.pathname)
+        // console.log(path)
+        if(location.pathname === '/' && path === '/about-me'){
+            return "bg-customBtn";
+        }
         return location.pathname === path
           ? "bg-customBtn " // Active button style
           : "text-customText bg-white"; // Inactive button style
