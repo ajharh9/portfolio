@@ -39,6 +39,20 @@ const projectList = [
     github: 'https://github.com/ajharh9/Zoiggi',
     liveDemo: 'https://zoiggi-live-demo-link.com',
   },
+  {
+    name: 'E-commerce Backend Development',
+    description: 'A secure and feature-rich backend for an e-commerce platform built with Spring Boot.',
+    technologies: ['Spring Boot', 'Spring Security', 'JPA', 'MySQL', 'REST APIs'],
+    features: [
+      'User registration and authentication using Spring Security.',
+      'Product management and categorization using JPA.',
+      'Order processing and cart handling.',
+      'Secure payment gateway integration.',
+      'RESTful APIs for frontend-backend interaction.',
+      'Optimized database queries for high performance.',
+    ],
+    github: 'https://github.com/ajharh9/E-Commerce',
+  },
 ];
 
 export default projectList;
