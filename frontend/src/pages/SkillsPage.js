@@ -1,87 +1,61 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaCode, FaServer, FaTools, FaDatabase } from 'react-icons/fa'; // Icons for skill sections
+import { FaCode, FaServer, FaTools, FaDatabase } from 'react-icons/fa';
 
 const SkillsPage = () => {
   return (
-    <div className="pt-4 pb-20 bg-gradient-to-b from-gray-100 to-gray-300 min-h-screen px-4 md:px-8">
-      {/* Page Header */}
+    <div className="pt-16 pb-20 bg-gray-100 min-h-screen px-4 md:px-8">
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-extrabold text-gray-800 mb-4 animate-fade-in-down">
-          My Skills
-        </h1>
-        <p className="text-lg text-gray-600 animate-fade-in-up">
-          As a Product Developer, I specialize in optimizing financial modules, designing scalable systems, and ensuring high-performance architecture.
+        <h1 className="text-5xl font-extrabold text-gray-800 mb-4">My Skills</h1>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          Technical skillset developed through hands-on experience in product engineering and system design.
         </p>
       </div>
 
-      {/* Skills Content */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Backend Development */}
-        <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-            <FaServer className="text-green-500 mr-2" />
-            Backend Development
-          </h2>
-          <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>Java, C++ (Performance Optimization & Financial Modules)</li>
-            <li>Spring Boot, Spring MVC, Hibernate, JPA</li>
-            <li>API Development (RESTful APIs & Microservices Architecture)</li>
-          </ul>
-        </div>
-
-        {/* Database & Performance Optimization */}
-        <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-            <FaDatabase className="text-red-500 mr-2" />
-            Database & Optimization
-          </h2>
-          <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>Oracle, PostgreSQL, MySQL (Efficient Query Optimization & Caching Strategies)</li>
-            <li>Batch Processing & Multithreading (Reduced Execution Time by 67%)</li>
-            <li>Financial Transaction Processing & Data Parsing Optimization</li>
-          </ul>
-        </div>
-
-        {/* Frontend Development (Basic) */}
-        <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-            <FaCode className="text-blue-500 mr-2" />
-            Frontend Development (Basic)
-          </h2>
-          <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>React.js, Tailwind CSS, HTML, CSS</li>
-            <li>Frontend State Management & Component Architecture</li>
-            <li>Built Full-Stack Swiggy Clone with React & Spring Boot</li>
-          </ul>
-        </div>
-
-        {/* DevOps & System Engineering */}
-        <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-            <FaTools className="text-purple-500 mr-2" />
-            DevOps & System Engineering
-          </h2>
-          <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>Docker, Kubernetes (Containerization & Deployment)</li>
-            <li>Git, Maven, Jenkins (CI/CD Automation)</li>
-            <li>Shell Scripting, Linux Administration</li>
-          </ul>
-        </div>
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <SkillCard
+          icon={<FaCode className="text-indigo-500 text-4xl mb-4" />}
+          title="Programming"
+          skills={["Java", "C++", "Python", "Shell Scripting"]}
+        />
+        <SkillCard
+          icon={<FaServer className="text-red-500 text-4xl mb-4" />}
+          title="Backend"
+          skills={["Spring Boot", "Hibernate", "REST APIs", "Microservices"]}
+        />
+        <SkillCard
+          icon={<FaDatabase className="text-yellow-500 text-4xl mb-4" />}
+          title="Databases"
+          skills={["PostgreSQL", "MySQL", "Oracle PL/SQL"]}
+        />
+        <SkillCard
+          icon={<FaTools className="text-green-500 text-4xl mb-4" />}
+          title="DevOps & Tools"
+          skills={["Docker", "Kubernetes", "Git", "Jenkins", "Linux"]}
+        />
       </div>
 
-      {/* Call-to-Action */}
       <div className="text-center mt-12">
-        <Link
-          to="/projects"
+        <a
+          href="/projects"
           className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:scale-105 hover:shadow-lg transition-all"
         >
-          Explore My Projects
-        </Link>
+          View My Projects
+        </a>
       </div>
     </div>
   );
 };
+
+const SkillCard = ({ icon, title, skills }) => (
+  <div className="bg-white rounded-xl shadow-lg p-6 text-center flex flex-col items-center hover:shadow-xl transition-all">
+    {icon}
+    <h2 className="text-xl font-semibold text-gray-800 mb-3">{title}</h2>
+    <ul className="text-gray-600 text-sm space-y-1">
+      {skills.map((skill, i) => (
+        <li key={i}>{skill}</li>
+      ))}
+    </ul>
+  </div>
+);
 
 export default SkillsPage;
