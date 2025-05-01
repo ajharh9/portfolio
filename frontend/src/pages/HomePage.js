@@ -3,51 +3,75 @@ import { Outlet, Link, NavLink, useLocation } from "react-router-dom";
 const HomePage = () => {
     const location = useLocation();
     const getButtonStyle = (path) => {
-        if (location.pathname === '/' && path === '/about-me') {
-            return "bg-customBtn";
-        }
         return location.pathname === path
-            ? "bg-customBtn " // Active button style
-            : "text-customText bg-white"; // Inactive button style
+            ? "bg-blue-600 text-white font-semibold shadow-md" // Active button
+            : "text-gray-700 bg-white hover:bg-gray-200"; // Inactive button
     };
+
     return (
-        <div className="bg-customGray-light pt-16 text-customText">
-            <div className="bg-customGray-dark h-auto p-5 flex flex-col lg:flex-row text-center lg:text-left items-center lg:items-start">
-                <img 
-                    alt='azhar' 
-                    src='https://media.licdn.com/dms/image/v2/D4D03AQEDq57F0J3EJw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1678467414125?e=1751500800&v=beta&t=7qT4ABvZD-y-wuFKQwqyGpX3ysxwBqCp8vXB4iVf05k'
-                    className="m-10 h-32 md:h-40 rounded-full shadow-2xl shadow-black cursor-pointer"
+        <div className="bg-gray-100 text-gray-800 pt-16">
+            {/* Hero Section */}
+            <div className="bg-gray-900 text-white py-10 px-5 flex flex-col lg:flex-row items-center lg:items-start">
+                {/* Profile Image */}
+                <img
+                    alt="Azhar Hussain"
+                    src="https://media.licdn.com/dms/image/v2/D4D03AQEDq57F0J3EJw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1678467414125?e=1751500800&v=beta&t=7qT4ABvZD-y-wuFKQwqyGpX3ysxwBqCp8vXB4iVf05k"
+                    className="rounded-full shadow-lg h-32 md:h-40 lg:h-48 mx-auto lg:mx-10"
                 />
-                <div className="px-5 md:px-10">
-                    <h1 className="text-3xl md:text-5xl font-bold">
-                        Building Tomorrow’s Scalable & Automated Solutions
+
+                {/* Introduction */}
+                <div className="mt-6 lg:mt-0 px-5 md:px-10 text-center lg:text-left max-w-3xl">
+                    <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                        Scaling Innovation Through Technology
                     </h1>
-                    <div className="py-5 mx-5 md:mx-10 text-center lg:text-start">
-                        <p className="font-semibold italic py-2">
-                            Hi, I'm Azhar Hussain, a passionate Full Stack Developer and DevOps Enthusiast.
-                        </p>
-                        <p>
-                            I specialize in building scalable applications and automating workflows using modern technologies like 
-                            <span className="font-semibold italic"> React, Spring Boot, Docker, and Kubernetes</span>. Explore my portfolio to see how I turn ideas into impactful solutions!
-                        </p>
-                    </div>
-                    <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start mx-5 md:mx-10">
-                        <ul className="list-none flex flex-col md:flex-row justify-evenly gap-5 md:gap-10 font-bold text-white">
-                            <NavLink to="/about-me"><li className={`cursor-pointer py-1 px-3 rounded-full hover:font-semibold ${getButtonStyle("/about-me")}`}>About Me</li></NavLink>
-                            <NavLink to="/skills"><li className={`cursor-pointer py-1 px-3 rounded-full hover:font-semibold ${getButtonStyle("/skills")}`}>Skills</li></NavLink>
-                            <NavLink to="/projects"><li className={`cursor-pointer py-1 px-3 rounded-full hover:font-semibold ${getButtonStyle("/projects")}`}>Projects</li></NavLink>
-                        </ul>
-                        <div className="list-none flex justify-evenly gap-5 mt-5 lg:mt-0">
-                            <Link className="" target="_blank" to="https://www.linkedin.com/in/azhar-hussain-304017204/"><p><img className="shadow-black w-6 hover:w-8" alt='linkedIn' src='./images/linkedIn.png'/></p></Link>
-                            <Link target="_blank" to="https://github.com/ajharh9"><p><img className="shadow-black w-6 hover:w-8" alt='github' src='./images/github.png'/></p></Link>
-                            <Link target="_blank" to="https://leetcode.com/u/ajharh999/"><p><img className="shadow-black w-6 hover:w-8" alt='leetcode' src='./images/LeetCode.png'/></p></Link>
-                        </div>
-                    </div>
+                    <p className="mt-4 text-lg font-light text-gray-300">
+                        Hi, I'm Azhar Hussain—a Backend Developer specializing in designing **high-performance enterprise solutions**, automating workflows, and crafting **scalable financial systems**.
+                    </p>
+                    <p className="mt-2 text-gray-300">
+                        I leverage technologies like <span className="font-semibold">Spring Boot, C++, React, Docker, Kubernetes</span> to build robust architectures and optimize processes.
+                    </p>
                 </div>
             </div>
+
+            {/* Navigation & Social Links */}
+            <div className="flex flex-col lg:flex-row justify-between items-center mx-auto py-6 px-5 md:px-10 max-w-6xl">
+                {/* Navigation Links */}
+                <ul className="flex gap-5 md:gap-10">
+                    <NavLink to="/about-me">
+                        <li className={`cursor-pointer py-2 px-5 rounded-lg transition-all ${getButtonStyle("/about-me")}`}>
+                            About Me
+                        </li>
+                    </NavLink>
+                    <NavLink to="/skills">
+                        <li className={`cursor-pointer py-2 px-5 rounded-lg transition-all ${getButtonStyle("/skills")}`}>
+                            Skills
+                        </li>
+                    </NavLink>
+                    <NavLink to="/projects">
+                        <li className={`cursor-pointer py-2 px-5 rounded-lg transition-all ${getButtonStyle("/projects")}`}>
+                            Projects
+                        </li>
+                    </NavLink>
+                </ul>
+
+                {/* Social Links */}
+                <div className="flex gap-5 mt-5 lg:mt-0">
+                    <Link target="_blank" to="https://www.linkedin.com/in/azhar-hussain-304017204/">
+                        <img className="w-6 hover:w-8 transition-all" alt="LinkedIn" src="./images/linkedIn.png" />
+                    </Link>
+                    <Link target="_blank" to="https://github.com/ajharh9">
+                        <img className="w-6 hover:w-8 transition-all" alt="GitHub" src="./images/github.png" />
+                    </Link>
+                    <Link target="_blank" to="https://leetcode.com/u/ajharh999/">
+                        <img className="w-6 hover:w-8 transition-all" alt="LeetCode" src="./images/LeetCode.png" />
+                    </Link>
+                </div>
+            </div>
+
+            {/* Outlet for nested routes */}
             <Outlet />
         </div>
     );
-}
+};
 
 export default HomePage;
