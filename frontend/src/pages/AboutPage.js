@@ -16,39 +16,33 @@ const AboutPage = () => {
       </div>
 
       {/* About Content */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         
         {/* Career Highlights */}
-        <div className="bg-white rounded-lg shadow-md hover:shadow-lg p-6 text-center transition-all">
-          <div className="flex justify-center mb-4">
-            <FaRocket className="text-blue-500 text-4xl" />
-          </div>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-3">Career Highlights</h2>
-          <p className="text-gray-600">Optimized wealth management modules, cutting batch execution time by 67 percent.</p>
-          <p className="text-gray-600">Integrated secure APIs for real-time financial data syncing.</p>
-          <p className="text-gray-600">Developed scalable solutions using C++, Java, and Spring Boot.</p>
+        <div className="bg-white rounded-xl shadow-lg p-6 text-center flex flex-col items-center hover:shadow-xl transition-all">
+          <FaRocket className="text-blue-500 text-4xl mb-4" />
+          <h2 className="text-xl font-semibold text-gray-800 mb-3">Career Highlights</h2>
+          <p className="text-gray-600 text-sm">Optimized wealth management modules, cutting batch execution time by 67 percent.</p>
+          <p className="text-gray-600 text-sm">Integrated secure APIs for real-time financial data syncing.</p>
+          <p className="text-gray-600 text-sm">Developed scalable solutions using C++, Java, and Spring Boot.</p>
         </div>
 
         {/* My Mission */}
-        <div className="bg-white rounded-lg shadow-md hover:shadow-lg p-6 text-center transition-all">
-          <div className="flex justify-center mb-4">
-            <FaTools className="text-green-500 text-4xl" />
-          </div>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-3">My Mission</h2>
-          <p className="text-gray-600">Building high-performance backend systems with a focus on security, efficiency, and scalability.</p>
-          <p className="text-gray-600">Enhancing financial workflows through process automation and optimization.</p>
-          <p className="text-gray-600">Driving technical excellence with modern frameworks and best practices.</p>
+        <div className="bg-white rounded-xl shadow-lg p-6 text-center flex flex-col items-center hover:shadow-xl transition-all">
+          <FaTools className="text-green-500 text-4xl mb-4" />
+          <h2 className="text-xl font-semibold text-gray-800 mb-3">My Mission</h2>
+          <p className="text-gray-600 text-sm">Building high-performance backend systems with a focus on security, efficiency, and scalability.</p>
+          <p className="text-gray-600 text-sm">Enhancing financial workflows through process automation and optimization.</p>
+          <p className="text-gray-600 text-sm">Driving technical excellence with modern frameworks and best practices.</p>
         </div>
 
         {/* Professional Expertise */}
-        <div className="bg-white rounded-lg shadow-md hover:shadow-lg p-6 text-center transition-all">
-          <div className="flex justify-center mb-4">
-            <FaUserTie className="text-purple-500 text-4xl" />
-          </div>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-3">Professional Expertise</h2>
-          <p className="text-gray-600">Backend Development – Java, C++, Spring Boot, Hibernate.</p>
-          <p className="text-gray-600">Database Optimization – PostgreSQL, MySQL, Oracle PL/SQL.</p>
-          <p className="text-gray-600">API & Security – RESTful APIs, OAuth, Spring Security.</p>
+        <div className="bg-white rounded-xl shadow-lg p-6 text-center flex flex-col items-center hover:shadow-xl transition-all">
+          <FaUserTie className="text-purple-500 text-4xl mb-4" />
+          <h2 className="text-xl font-semibold text-gray-800 mb-3">Professional Expertise</h2>
+          <p className="text-gray-600 text-sm">Backend Development – Java, C++, Spring Boot, Hibernate.</p>
+          <p className="text-gray-600 text-sm">Database Optimization – PostgreSQL, MySQL, Oracle PL/SQL.</p>
+          <p className="text-gray-600 text-sm">API & Security – RESTful APIs, OAuth, Spring Security.</p>
         </div>
       </div>
 
