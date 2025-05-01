@@ -11,7 +11,7 @@ const AboutPage = () => {
           About Me
         </h1>
         <p className="text-lg text-gray-600 animate-fade-in-up">
-          Passionate Backend Developer, optimizing enterprise financial modules and designing scalable systems.
+          Backend Developer focused on building scalable financial systems, optimizing performance, and driving efficiency.
         </p>
       </div>
 
@@ -26,13 +26,13 @@ const AboutPage = () => {
           </h2>
           <ul className="list-disc ml-6 text-gray-700 space-y-3">
             <li>
-              Developed and optimized **financial modules** for wealth products including bonds, equities, and insurance.
+              Developed and optimized financial modules for wealth products including bonds, equities, and insurance.
             </li>
             <li>
-              Designed **REST APIs** enabling secure integration with market data providers and compliance platforms.
+              Designed REST APIs that enable secure integration with market data providers and compliance platforms.
             </li>
             <li>
-              Reduced batch job execution time **by 67%** by implementing efficient **C++ multithreading** and caching techniques.
+              Reduced batch job execution time by 67 percent using C++ multithreading and caching techniques.
             </li>
           </ul>
         </div>
@@ -44,8 +44,8 @@ const AboutPage = () => {
             My Mission
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            I strive to build **high-performance, scalable backends** using **Spring Boot, Java, and C++**.  
-            Whether it's optimizing batch processes or designing secure REST APIs, my goal is to create systems that drive efficiency and innovation.
+            I specialize in building high-performance, scalable backends using Spring Boot, Java, and C++.  
+            Whether it's optimizing batch processes or designing secure REST APIs, I aim to create systems that enhance efficiency, reliability, and user experience.
           </p>
         </div>
       </div>
@@ -60,8 +60,8 @@ const AboutPage = () => {
             E-Commerce Backend
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Designed a **secure and scalable** backend system for an **e-commerce platform** using **Spring Boot, JPA, and Spring Security**.  
-            Implemented **user authentication, product management, and order processing APIs**, ensuring seamless transactions.
+            Built a secure and scalable backend system for an e-commerce platform using Spring Boot, JPA, and Spring Security.  
+            Implemented user authentication, product management, and order processing APIs, ensuring seamless transactions.
           </p>
         </div>
 
@@ -72,8 +72,8 @@ const AboutPage = () => {
             Swiggy Clone (Full-Stack)
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Developed a **food delivery platform** inspired by Swiggy, using **React, TailwindCSS, and Spring Boot**.  
-            Implemented **restaurant listings, cart management, authentication, and order tracking**, ensuring a **responsive and scalable** user experience.
+            Developed a full-stack food delivery platform inspired by Swiggy using React, TailwindCSS, and Spring Boot.  
+            Implemented restaurant listings, cart management, authentication, and order tracking for a responsive and scalable user experience.
           </p>
         </div>
       </div>
