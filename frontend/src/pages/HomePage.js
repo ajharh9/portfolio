@@ -50,18 +50,12 @@ const HomePage = () => {
                 </div>
             )}
 
-            {/* Show Home Button when home is hidden */}
+            {/* Blinking Downward Arrow Symbol (when on a subroute) */}
             {!showHomeDetails && (
                 <div className="flex justify-center py-4">
-                    <button
-                        onClick={() => {
-                            setShowHomeDetails(true);
-                            window.history.pushState({}, '', '/');
-                        }}
-                        className="bg-customBtn text-white px-6 py-2 rounded-full shadow-md hover:scale-105 transition-all"
-                    >
-                        ⬅️ Show Home
-                    </button>
+                    <div className="text-3xl text-white animate-pulse">
+                        <span>/\\</span>
+                    </div>
                 </div>
             )}
 
@@ -86,9 +80,9 @@ const HomePage = () => {
                 </ul>
             </div>
 
-            {/* Social Media Links (optional: hide if homepage details hidden) */}
+            {/* Social Media Links */}
             {showHomeDetails && (
-                <div className="flex justify-center gap-5 mt-2">
+                <div className="flex justify-center gap-10 mt-5">
                     <Link target="_blank" to="https://www.linkedin.com/in/azhar-hussain-304017204/">
                         <img className="shadow-black w-6 hover:w-8 transition-all" alt="LinkedIn" src="./images/linkedIn.png" />
                     </Link>
@@ -108,6 +102,7 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
 
 // import { Outlet, Link, NavLink, useLocation } from "react-router-dom";
 
