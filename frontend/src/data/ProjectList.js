@@ -53,6 +53,19 @@ const projectList = [
     ],
     github: 'https://github.com/ajharh9/E-Commerce',
   },
+  {
+    name: 'Swiggy Clone',
+    description: 'A full-stack food delivery app inspired by Swiggy, integrating real-time order tracking and restaurant management.',
+    technologies: ['React', 'Tailwind CSS', 'Spring Boot', 'PostgreSQL', 'JWT Authentication'],
+    features: [
+      'Dynamic restaurant listings with filtering and sorting.',
+      'Secure authentication using JWT and Spring Security.',
+      'Real-time order tracking and cart management.',
+      'Scalable backend API to support thousands of transactions.',
+    ],
+    github: 'https://github.com/ajharh9/Swiggy-Clone',
+    liveDemo: 'https://swiggy-clone-demo.com',
+  },
 ];
 
 export default projectList;
