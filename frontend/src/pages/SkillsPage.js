@@ -11,25 +11,13 @@ const SkillsPage = () => {
           My Skills
         </h1>
         <p className="text-lg text-gray-600 animate-fade-in-up">
-          Over the years, I have honed my expertise in various technologies and tools to deliver scalable and efficient solutions. Here’s an overview of my core competencies:
+          As a **Backend Developer & Product Engineer**, I specialize in optimizing **financial modules**, designing **scalable systems**, and ensuring **high-performance architecture**.
         </p>
       </div>
 
       {/* Skills Content */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Frontend Development */}
-        <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-            <FaCode className="text-blue-500 mr-2" />
-            Frontend Development
-          </h2>
-          <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>HTML, CSS, JavaScript</li>
-            <li>React.js, React Router</li>
-            <li>Tailwind CSS, Bootstrap</li>
-          </ul>
-        </div>
-
+        
         {/* Backend Development */}
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
@@ -37,35 +25,48 @@ const SkillsPage = () => {
             Backend Development
           </h2>
           <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>Java, Spring Boot</li>
-            <li>Node.js (basic knowledge)</li>
-            <li>API Development (RESTful APIs)</li>
+            <li>Java, C++ (Performance Optimization & Financial Modules)</li>
+            <li>Spring Boot, Spring MVC, Hibernate, JPA</li>
+            <li>API Development (RESTful APIs & Microservices Architecture)</li>
           </ul>
         </div>
 
-        {/* DevOps & Tools */}
-        <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-            <FaTools className="text-purple-500 mr-2" />
-            DevOps & Tools
-          </h2>
-          <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>Docker, Kubernetes</li>
-            <li>Git, GitLab, Jenkins</li>
-            <li>Oracle, MySQL</li>
-          </ul>
-        </div>
-
-        {/* Programming Languages */}
+        {/* Database & Performance Optimization */}
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
             <FaDatabase className="text-red-500 mr-2" />
-            Programming Languages
+            Database & Optimization
           </h2>
           <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>Python, Java, C++</li>
-            <li>JavaScript</li>
-            <li>Shell Scripting</li>
+            <li>Oracle, PostgreSQL, MySQL (Efficient Query Optimization & Caching Strategies)</li>
+            <li>Batch Processing & Multithreading (Reduced Execution Time by 67%)</li>
+            <li>Financial Transaction Processing & Data Parsing Optimization</li>
+          </ul>
+        </div>
+
+        {/* Frontend Development (Basic) */}
+        <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+            <FaCode className="text-blue-500 mr-2" />
+            Frontend Development (Basic)
+          </h2>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2">
+            <li>React.js, Tailwind CSS, HTML, CSS</li>
+            <li>Frontend State Management & Component Architecture</li>
+            <li>Built Full-Stack Swiggy Clone with React & Spring Boot</li>
+          </ul>
+        </div>
+
+        {/* DevOps & System Engineering */}
+        <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-all">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+            <FaTools className="text-purple-500 mr-2" />
+            DevOps & System Engineering
+          </h2>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2">
+            <li>Docker, Kubernetes (Containerization & Deployment)</li>
+            <li>Git, Maven, Jenkins (CI/CD Automation)</li>
+            <li>Shell Scripting, Linux Administration</li>
           </ul>
         </div>
       </div>
