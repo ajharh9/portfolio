@@ -1,42 +1,63 @@
-const AboutMePage = () => {
+const AboutPage = () => {
     return (
-        <div className="bg-customGray-light text-customText pt-16 px-5 md:px-10">
-            <h2 className="text-3xl font-bold">About Me</h2>
-            <div className="py-4">
-                <p>
-                    I am a Product Developer with 2.5 years of experience at <strong>EdgeVerve</strong>, specializing in building and optimizing financial modules for investment products. Over the years, I have worked on various projects involving technologies like <span className="font-semibold italic">C++, Java, Spring Boot, REST APIs, Python, and Shell scripting</span>.
-                </p>
+        <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white px-6 py-20">
+            <div className="max-w-6xl mx-auto">
+                <h1 className="text-4xl font-bold mb-6 border-b border-gray-600 pb-2">About Me</h1>
 
-                <p className="py-2">
-                    My journey in tech started during my BTech in Electronics & Communication Engineering, where I discovered my passion for coding and problem-solving. This passion led me to develop expertise in creating scalable and efficient systems, automating workflows, and working with microservices architecture.
-                </p>
+                {/* Summary Section */}
+                <section className="mb-10">
+                    <p className="text-gray-300 leading-relaxed text-lg">
+                        Hey, I'm <span className="text-white font-semibold">Azhar Hussain</span>, a Product Developer with <span className="text-white font-semibold">2.5+ years of experience</span> at EdgeVerve (Infosys Finacle). I specialize in crafting robust backend systems for the finance industry — with hands-on expertise in <span className="text-white font-semibold">C++, Java, Spring Boot</span> and <span className="text-white font-semibold">Oracle PL/SQL</span>.
+                    </p>
+                    <p className="mt-4 text-gray-300 leading-relaxed">
+                        My work revolves around building and optimizing modules for portfolio management, wealth advisory, and market integrations. I'm passionate about high-performance system design, transaction automation, and writing clean, maintainable code.
+                    </p>
+                </section>
 
-                <p className="py-2">
-                    In my current role, I build and optimize wealth management solutions that cater to diverse investment portfolios, including equities, bonds, mutual funds, and more. I work closely with cross-functional teams to integrate third-party APIs and optimize the performance of the systems I work on.
-                </p>
+                {/* Skills Section */}
+                <section className="mb-10">
+                    <h2 className="text-2xl font-semibold mb-4">⚙️ Technical Skills</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-300">
+                        <div><span className="text-white">Languages:</span> Java, C++, Python, SQL</div>
+                        <div><span className="text-white">Backend:</span> Spring Boot, Spring MVC, Hibernate, JPA</div>
+                        <div><span className="text-white">Frontend (Basic):</span> React, HTML, CSS</div>
+                        <div><span className="text-white">Databases:</span> Oracle, PostgreSQL, MySQL</div>
+                        <div><span className="text-white">DevOps/Tools:</span> Git, Maven, Jenkins, Docker, Postman, Jira</div>
+                        <div><span className="text-white">Systems & APIs:</span> Shell Scripting, REST APIs, Linux</div>
+                    </div>
+                </section>
 
-                <p className="py-2">
-                    I am passionate about learning and growing in the fields of <span className="font-semibold italic">Cloud-Native Development, Microservices, and DevOps Practices</span>. I continuously seek new challenges that allow me to push my boundaries and expand my knowledge in modern development practices.
-                </p>
+                {/* Experience Section */}
+                <section className="mb-10">
+                    <h2 className="text-2xl font-semibold mb-4">💼 Experience</h2>
+                    <div className="bg-gray-800 p-4 rounded-xl shadow">
+                        <h3 className="text-lg font-semibold text-white">Product Developer @ Infosys Finacle (EdgeVerve)</h3>
+                        <p className="text-sm text-gray-400">Jan 2023 – Present | Hyderabad, Telangana</p>
+                        <ul className="mt-2 text-gray-300 list-disc list-inside text-sm space-y-1">
+                            <li>Built and optimized wealth modules for mutual funds, bonds, insurance, IPOs, etc.</li>
+                            <li>Developed Spring Boot microservices for advisory and client workflows.</li>
+                            <li>Improved performance of C++ batch processes using STL, multithreading, and caching.</li>
+                            <li>Designed REST APIs for third-party integration (market data, compliance, risk).</li>
+                        </ul>
+                    </div>
+                </section>
 
-                <p className="py-2">
-                    My key strengths include:
-                    <ul className="list-disc pl-6">
-                        <li><strong>System Optimization</strong>: Refactoring legacy systems to enhance performance and reduce resource consumption.</li>
-                        <li><strong>API Development & Integrations</strong>: Designing and integrating secure and efficient REST APIs for smooth system interactions.</li>
-                        <li><strong>Automation</strong>: Automating workflows to reduce manual intervention and streamline operational processes.</li>
-                    </ul>
-                </p>
-
-                <p className="py-2">
-                    I am always eager to connect with like-minded professionals and contribute to impactful projects. If you're looking for someone who thrives in building high-performance systems, let's connect!
-                </p>
+                {/* Education Section */}
+                <section>
+                    <h2 className="text-2xl font-semibold mb-4">🎓 Education</h2>
+                    <div className="bg-gray-800 p-4 rounded-xl shadow text-sm text-gray-300">
+                        <p className="text-white font-medium">B.Tech in Electronics & Communication Engineering</p>
+                        <p>Heritage Institute of Technology, Kolkata</p>
+                        <p>2018 – 2022 | CGPA: 8.67/10</p>
+                    </div>
+                </section>
             </div>
         </div>
     );
 };
 
-export default AboutMePage;
+export default AboutPage;
+
 
 // import React from 'react';
 // import { Link } from 'react-router-dom';
