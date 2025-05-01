@@ -11,7 +11,7 @@ const SkillsPage = () => {
           My Skills
         </h1>
         <p className="text-lg text-gray-600 animate-fade-in-up">
-          As a Backend Developer & Product Engineer, I specialize in optimizing financial modules, designing scalable systems, and ensuring high-performance architecture.
+          As a Product Developer, I specialize in optimizing financial modules, designing scalable systems, and ensuring high-performance architecture.
         </p>
       </div>
 
