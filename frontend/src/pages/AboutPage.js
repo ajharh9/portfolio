@@ -83,6 +83,7 @@ const AboutPage = () => {
 
 export default AboutPage;
 
+
 // const AboutPage = () => {
 //     return (
 //         <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 text-gray-900 px-6 pb-20 pt-5">
