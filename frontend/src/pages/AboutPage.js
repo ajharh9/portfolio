@@ -1,6 +1,7 @@
 const AboutPage = () => {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white px-6 py-20">
+        // <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white px-6 py-20">
+        <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 text-gray-900 px-6 py-20">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-4xl font-bold mb-6 border-b border-gray-600 pb-2">👨‍💻 About Me</h1>
 
