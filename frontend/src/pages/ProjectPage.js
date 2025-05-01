@@ -4,7 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectPage = () => {
   return (
-    <div className="pt-20 pb-20 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen px-4 md:px-10">
+    <div className="pb-20 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen px-4 md:px-10">
       <div className="text-center mb-14">
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-3">
           My Projects
