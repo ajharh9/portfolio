@@ -2,15 +2,15 @@ const AboutPage = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white px-6 py-20">
             <div className="max-w-6xl mx-auto">
-                <h1 className="text-4xl font-bold mb-6 border-b border-gray-600 pb-2">About Me</h1>
+                <h1 className="text-4xl font-bold mb-6 border-b border-gray-600 pb-2">👨‍💻 About Me</h1>
 
                 {/* Summary Section */}
                 <section className="mb-10">
                     <p className="text-gray-300 leading-relaxed text-lg">
-                        Hey, I'm <span className="text-white font-semibold">Azhar Hussain</span>, a Product Developer with <span className="text-white font-semibold">2.5+ years of experience</span> at EdgeVerve (Infosys Finacle). I specialize in crafting robust backend systems for the finance industry — with hands-on expertise in <span className="text-white font-semibold">C++, Java, Spring Boot</span> and <span className="text-white font-semibold">Oracle PL/SQL</span>.
+                        Hey there! I’m <span className="text-white font-semibold">Azhar Hussain</span>, a passionate Product Developer with <span className="text-white font-semibold">2.5+ years of experience</span> at EdgeVerve (Infosys Finacle). I thrive on solving complex problems in the finance domain, working across backend systems using <span className="text-white font-semibold">C++, Java, Spring Boot</span>, and <span className="text-white font-semibold">Oracle PL/SQL</span>.
                     </p>
                     <p className="mt-4 text-gray-300 leading-relaxed">
-                        My work revolves around building and optimizing modules for portfolio management, wealth advisory, and market integrations. I'm passionate about high-performance system design, transaction automation, and writing clean, maintainable code.
+                        My focus lies in developing and optimizing modules related to portfolio management, market integrations, and advisory workflows. I'm driven by a deep interest in performance tuning, clean code practices, and building scalable backend solutions.
                     </p>
                 </section>
 
@@ -20,24 +20,24 @@ const AboutPage = () => {
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-300">
                         <div><span className="text-white">Languages:</span> Java, C++, Python, SQL</div>
                         <div><span className="text-white">Backend:</span> Spring Boot, Spring MVC, Hibernate, JPA</div>
-                        <div><span className="text-white">Frontend (Basic):</span> React, HTML, CSS</div>
+                        <div><span className="text-white">Frontend:</span> React, HTML, CSS (Basic)</div>
                         <div><span className="text-white">Databases:</span> Oracle, PostgreSQL, MySQL</div>
-                        <div><span className="text-white">DevOps/Tools:</span> Git, Maven, Jenkins, Docker, Postman, Jira</div>
-                        <div><span className="text-white">Systems & APIs:</span> Shell Scripting, REST APIs, Linux</div>
+                        <div><span className="text-white">DevOps & Tools:</span> Git, Maven, Jenkins, Docker, Postman, Jira</div>
+                        <div><span className="text-white">Systems & APIs:</span> Linux, Shell Scripting, REST APIs</div>
                     </div>
                 </section>
 
                 {/* Experience Section */}
                 <section className="mb-10">
-                    <h2 className="text-2xl font-semibold mb-4">💼 Experience</h2>
+                    <h2 className="text-2xl font-semibold mb-4">💼 Professional Experience</h2>
                     <div className="bg-gray-800 p-4 rounded-xl shadow">
                         <h3 className="text-lg font-semibold text-white">Product Developer @ Infosys Finacle (EdgeVerve)</h3>
                         <p className="text-sm text-gray-400">Jan 2023 – Present | Hyderabad, Telangana</p>
                         <ul className="mt-2 text-gray-300 list-disc list-inside text-sm space-y-1">
-                            <li>Built and optimized wealth modules for mutual funds, bonds, insurance, IPOs, etc.</li>
-                            <li>Developed Spring Boot microservices for advisory and client workflows.</li>
-                            <li>Improved performance of C++ batch processes using STL, multithreading, and caching.</li>
-                            <li>Designed REST APIs for third-party integration (market data, compliance, risk).</li>
+                            <li>Designed and enhanced wealth modules for mutual funds, bonds, insurance, and IPOs.</li>
+                            <li>Built microservices using Spring Boot to streamline advisory and customer workflows.</li>
+                            <li>Optimized legacy C++ batch processes with STL, multithreading, and caching techniques.</li>
+                            <li>Integrated external APIs for market data, compliance checks, and risk profiling.</li>
                         </ul>
                     </div>
                 </section>
@@ -48,7 +48,7 @@ const AboutPage = () => {
                     <div className="bg-gray-800 p-4 rounded-xl shadow text-sm text-gray-300">
                         <p className="text-white font-medium">B.Tech in Electronics & Communication Engineering</p>
                         <p>Heritage Institute of Technology, Kolkata</p>
-                        <p>2018 – 2022 | CGPA: 8.67/10</p>
+                        <p>2018 – 2022 | CGPA: 8.67 / 10</p>
                     </div>
                 </section>
             </div>
@@ -57,6 +57,7 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
 
 
 // import React from 'react';
