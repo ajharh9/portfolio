@@ -1,16 +1,15 @@
 const AboutPage = () => {
     return (
-        // <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white px-6 py-20">
         <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 text-gray-900 px-6 py-20">
             <div className="max-w-6xl mx-auto">
-                <h1 className="text-4xl font-bold mb-6 border-b border-gray-600 pb-2">👨‍💻 About Me</h1>
+                <h1 className="text-4xl font-bold mb-6 border-b border-gray-400 pb-2">👨‍💻 About Me</h1>
 
                 {/* Summary Section */}
                 <section className="mb-10">
-                    <p className="text-gray-300 leading-relaxed text-lg">
-                        Hey there! I’m <span className="text-white font-semibold">Azhar Hussain</span>, a passionate Product Developer with <span className="text-white font-semibold">2.5+ years of experience</span> at EdgeVerve (Infosys Finacle). I thrive on solving complex problems in the finance domain, working across backend systems using <span className="text-white font-semibold">C++, Java, Spring Boot</span>, and <span className="text-white font-semibold">Oracle PL/SQL</span>.
+                    <p className="leading-relaxed text-lg text-gray-800">
+                        Hey there! I’m <span className="font-semibold text-gray-900">Azhar Hussain</span>, a passionate Product Developer with <span className="font-semibold text-gray-900">2.5+ years of experience</span> at EdgeVerve (Infosys Finacle). I thrive on solving complex problems in the finance domain, working across backend systems using <span className="font-semibold text-gray-900">C++, Java, Spring Boot</span>, and <span className="font-semibold text-gray-900">Oracle PL/SQL</span>.
                     </p>
-                    <p className="mt-4 text-gray-300 leading-relaxed">
+                    <p className="mt-4 leading-relaxed text-gray-800">
                         My focus lies in developing and optimizing modules related to portfolio management, market integrations, and advisory workflows. I'm driven by a deep interest in performance tuning, clean code practices, and building scalable backend solutions.
                     </p>
                 </section>
@@ -18,23 +17,23 @@ const AboutPage = () => {
                 {/* Skills Section */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold mb-4">⚙️ Technical Skills</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-300">
-                        <div><span className="text-white">Languages:</span> Java, C++, Python, SQL</div>
-                        <div><span className="text-white">Backend:</span> Spring Boot, Spring MVC, Hibernate, JPA</div>
-                        <div><span className="text-white">Frontend:</span> React, HTML, CSS (Basic)</div>
-                        <div><span className="text-white">Databases:</span> Oracle, PostgreSQL, MySQL</div>
-                        <div><span className="text-white">DevOps & Tools:</span> Git, Maven, Jenkins, Docker, Postman, Jira</div>
-                        <div><span className="text-white">Systems & APIs:</span> Linux, Shell Scripting, REST APIs</div>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-700">
+                        <div><span className="font-semibold text-gray-900">Languages:</span> Java, C++, Python, SQL</div>
+                        <div><span className="font-semibold text-gray-900">Backend:</span> Spring Boot, Spring MVC, Hibernate, JPA</div>
+                        <div><span className="font-semibold text-gray-900">Frontend:</span> React, HTML, CSS (Basic)</div>
+                        <div><span className="font-semibold text-gray-900">Databases:</span> Oracle, PostgreSQL, MySQL</div>
+                        <div><span className="font-semibold text-gray-900">DevOps & Tools:</span> Git, Maven, Jenkins, Docker, Postman, Jira</div>
+                        <div><span className="font-semibold text-gray-900">Systems & APIs:</span> Linux, Shell Scripting, REST APIs</div>
                     </div>
                 </section>
 
                 {/* Experience Section */}
                 <section className="mb-10">
                     <h2 className="text-2xl font-semibold mb-4">💼 Professional Experience</h2>
-                    <div className="bg-gray-800 p-4 rounded-xl shadow">
-                        <h3 className="text-lg font-semibold text-white">Product Developer @ Infosys Finacle (EdgeVerve)</h3>
-                        <p className="text-sm text-gray-400">Jan 2023 – Present | Hyderabad, Telangana</p>
-                        <ul className="mt-2 text-gray-300 list-disc list-inside text-sm space-y-1">
+                    <div className="bg-white p-4 rounded-xl shadow text-sm text-gray-800">
+                        <h3 className="text-lg font-semibold text-gray-900">Product Developer @ Infosys Finacle (EdgeVerve)</h3>
+                        <p className="text-sm text-gray-600">Jan 2023 – Present | Hyderabad, Telangana</p>
+                        <ul className="mt-2 list-disc list-inside space-y-1">
                             <li>Designed and enhanced wealth modules for mutual funds, bonds, insurance, and IPOs.</li>
                             <li>Built microservices using Spring Boot to streamline advisory and customer workflows.</li>
                             <li>Optimized legacy C++ batch processes with STL, multithreading, and caching techniques.</li>
@@ -46,8 +45,8 @@ const AboutPage = () => {
                 {/* Education Section */}
                 <section>
                     <h2 className="text-2xl font-semibold mb-4">🎓 Education</h2>
-                    <div className="bg-gray-800 p-4 rounded-xl shadow text-sm text-gray-300">
-                        <p className="text-white font-medium">B.Tech in Electronics & Communication Engineering</p>
+                    <div className="bg-white p-4 rounded-xl shadow text-sm text-gray-800">
+                        <p className="font-medium text-gray-900">B.Tech in Electronics & Communication Engineering</p>
                         <p>Heritage Institute of Technology, Kolkata</p>
                         <p>2018 – 2022 | CGPA: 8.67 / 10</p>
                     </div>
@@ -58,6 +57,7 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
 
 
 
