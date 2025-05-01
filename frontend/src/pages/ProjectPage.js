@@ -10,7 +10,7 @@ const ProjectPage = () => {
           My Projects
         </h1>
         <p className="text-lg text-gray-600 animate-fade-in-up">
-          Explore some of the exciting projects I’ve worked on, showcasing expertise in frontend, backend, and DevOps technologies.
+          Explore some of the exciting projects I’ve developed, showcasing expertise in backend development, system optimization, and full-stack applications.
         </p>
       </div>
 
@@ -76,6 +76,59 @@ const ProjectPage = () => {
             </div>
           </div>
         ))}
+
+        {/* Hardcoded Projects */}
+        {/* E-Commerce Backend */}
+        <div
+          className="bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex flex-col"
+          style={{ height: '500px' }}
+        >
+          <div className="p-6 overflow-y-auto flex-grow custom-scrollbar">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">E-Commerce Backend</h2>
+            <p className="text-gray-600 mb-4">
+              Developed a secure and scalable e-commerce backend using Spring Boot, JPA, and Spring Security. Implemented user authentication, product management, and order processing APIs for smooth transactions.
+            </p>
+            <h3 className="text-lg font-semibold text-gray-800">Technologies:</h3>
+            <ul className="list-disc ml-6 text-gray-600 mb-4 space-y-1">
+              <li>Spring Boot</li>
+              <li>Spring Security</li>
+              <li>PostgreSQL, MySQL</li>
+              <li>REST APIs</li>
+            </ul>
+            <h3 className="text-lg font-semibold text-gray-800">Key Features:</h3>
+            <ul className="list-disc ml-6 text-gray-600 space-y-1">
+              <li>Secure Authentication & Authorization</li>
+              <li>Optimized Order Processing & Payment Integration</li>
+              <li>Scalable RESTful API Design</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Swiggy Clone */}
+        <div
+          className="bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex flex-col"
+          style={{ height: '500px' }}
+        >
+          <div className="p-6 overflow-y-auto flex-grow custom-scrollbar">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Swiggy Clone (Full-Stack)</h2>
+            <p className="text-gray-600 mb-4">
+              Designed a Swiggy-like food delivery platform using React, TailwindCSS, and Spring Boot. Implemented restaurant listings, cart management, authentication, and order tracking, ensuring a smooth user experience.
+            </p>
+            <h3 className="text-lg font-semibold text-gray-800">Technologies:</h3>
+            <ul className="list-disc ml-6 text-gray-600 mb-4 space-y-1">
+              <li>React.js, Tailwind CSS</li>
+              <li>Spring Boot, REST APIs</li>
+              <li>MongoDB, PostgreSQL</li>
+              <li>JWT Authentication</li>
+            </ul>
+            <h3 className="text-lg font-semibold text-gray-800">Key Features:</h3>
+            <ul className="list-disc ml-6 text-gray-600 space-y-1">
+              <li>Dynamic Restaurant Listings</li>
+              <li>Real-Time Order Tracking</li>
+              <li>User Authentication & Secure Transactions</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       {/* Call-to-Action Section */}
