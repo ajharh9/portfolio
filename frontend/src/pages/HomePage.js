@@ -15,7 +15,7 @@ const HomePage = () => {
             <div className="bg-customGray-dark h-auto p-5 flex flex-col lg:flex-row text-center lg:text-left items-center lg:items-start">
                 <img 
                     alt='azhar' 
-                    src='https://media.licdn.com/dms/image/v2/D4D03AQEDq57F0J3EJw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1678467414125?e=1738800000&v=beta&t=yqkVXs6lE5aj7jgtgNn1WiNqdhizwVuHmVK3kCcCYFE'
+                    src='https://media.licdn.com/dms/image/v2/D4D03AQEDq57F0J3EJw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1678467414125?e=1751500800&v=beta&t=7qT4ABvZD-y-wuFKQwqyGpX3ysxwBqCp8vXB4iVf05k'
                     className="m-10 h-32 md:h-40 rounded-full shadow-2xl shadow-black cursor-pointer"
                 />
                 <div className="px-5 md:px-10">
